@@ -139,3 +139,36 @@ for(let news of btnNews){
 		}, 300)
 	})
 }
+
+
+let policyLink = document.querySelector(".policy");
+let closePopUp = document.querySelector(".close__button");
+let popUpContent = document.querySelector(".popup__content");
+let popUp = document.querySelector(".popup__privacy_policy");
+let blurPopUp = document.querySelector(".close__popup");
+
+policyLink.addEventListener("click", function(e){
+	popUp.classList.remove("hidden");
+	setTimeout(function(){
+		popUpContent.style.transition = "0.5s";
+		popUpContent.style.transform = "translate(0%,0%)";
+	}, 100)
+	e.preventDefault();
+});
+
+closePopUp.addEventListener("click", function(){
+	popUpContent.style.transition = "0.5s";
+	popUpContent.style.transform = "translate(0%,-150%)";
+	setTimeout(function(){
+		popUp.classList.add("hidden");
+	},500)
+});
+
+blurPopUp.addEventListener("click", function(e){
+	popUpContent.style.transition = "0.5s";
+	popUpContent.style.transform = "translate(0%,-150%)";
+	setTimeout(function(){
+		popUp.classList.add("hidden");
+	},500)
+	e.preventDefault();
+});
