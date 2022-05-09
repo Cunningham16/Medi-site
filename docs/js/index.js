@@ -10,31 +10,25 @@ let currentSlide = 1;
 let slide1 = {
 	header: "Косметология",
 	textSlide: "Современный мир диктует новые каноны жизни: ухоженное лицо и тело, стройная, подтянутая фигура - сегодня это неотъемлемые черты привлекательной внешности, характеризующие человека благополучного и успешного.",
-	imgSlideSrc: "img/label-img.png"
+	imgSlideSrc: "img/slider1.png"
 };
 
 let slide2 = {
 	header: "Пластическая хирургия",
 	textSlide: "Lorem ipsum dolor sit amet, consectdfdfdfdetur adipisicing elit. Quo reiciendis, minus optio sapiente iure cumque nisi rem magni magnam obcaecati alias blanditiis aliquid, dolor deleniti, neque atque delectus velit. Tempora?",
-	imgSlideSrc: "img/label-img.png"
+	imgSlideSrc: "img/slider2.jpg"
 };
 
 let slide3 = {
 	header: "Стоматология",
 	textSlide: "Lorem ipsum dolor sit amet, consectdfdfdfdetur adipisicing elit. Quo reiciendis, minus optio sapiente iure cumque nisi rem magni magnam obcaecati alias blanditiis aliquid, dolor deleniti, neque atque delectus velit. Tempora?",
-	imgSlideSrc: "img/label-img.png"
+	imgSlideSrc: "img/card-img2.png"
 };
 
 let slide4 = {
 	header: "Лазерная медицина",
 	textSlide: "Lorem ipsum dolor sit amet, consectdfdfdfdetur adipisicing elit. Quo reiciendis, minus optio sapiente iure cumque nisi rem magni magnam obcaecati alias blanditiis aliquid, dolor deleniti, neque atque delectus velit. Tempora?",
-	imgSlideSrc: "img/label-img.png"
-};
-
-let slide5 = {
-	header: "Контакты",
-	textSlide: "Lorem ipsum dolor sit amet, consectdfdfdfdetur adipisicing elit. Quo reiciendis, minus optio sapiente iure cumque nisi rem magni magnam obcaecati alias blanditiis aliquid, dolor deleniti, neque atque delectus velit. Tempora?",
-	imgSlideSrc: "img/label-img.png"
+	imgSlideSrc: "img/slider4.jpg"
 };
 
 let sliderObj = {
@@ -42,12 +36,11 @@ let sliderObj = {
 	"slide2": slide2,
 	"slide3": slide3,
 	"slide4": slide4,
-	"slide5": slide5,
 }
 
 prevBtn.addEventListener("click", function(){
 	if(currentSlide === 1){
-		currentSlide = 5;
+		currentSlide = 4;
 		sliderMove(currentSlide);
 	}else{
 		currentSlide--;
@@ -56,7 +49,7 @@ prevBtn.addEventListener("click", function(){
 });
 
 nextBtn.addEventListener("click", function(){
-	if (currentSlide === 5) {
+	if (currentSlide === 4) {
 		currentSlide = 1;
 		sliderMove(currentSlide);
 	}else{

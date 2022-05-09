@@ -5,6 +5,27 @@ body{
 	font-family: "Roboto Flex", sans-serif;
 }
 
+.slider-img{
+	max-width: 756px;
+	width: 100%;
+	height: 533px;
+	max-height: 100%;
+}
+
+.slider-img img{
+	width: 756px;
+	height: 529px;
+}
+
+.contacts{
+	text-decoration: none;
+	color: white;
+}
+
+.contacts{
+	color: #00868A;
+}
+
 .wrapper{
 	max-width: 1295px;
 	margin-right: auto;
@@ -340,7 +361,7 @@ nav{
 	height: 530px;
 	line-height: 27px;
 	padding: 10px 50px;
-	background-color: lightgray;
+	background-color: #E5F3F3;
 }
 
 .opisanie h3{
@@ -377,7 +398,7 @@ nav{
 .offer-cards{
 	margin-top: 6em;
 	width:100%;
-	background-color: lightgray;
+	background-color: #E5F3F3;
 	height: 300px;
 	padding-top: 90px;
 }
