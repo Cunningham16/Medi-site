@@ -142,33 +142,57 @@ for(let news of btnNews){
 
 
 let policyLink = document.querySelector(".policy");
-let closePopUp = document.querySelector(".close__button");
-let popUpContent = document.querySelector(".popup__content");
-let popUp = document.querySelector(".popup__privacy_policy");
-let blurPopUp = document.querySelector(".close__popup");
+let buttonRegistration = document.querySelector(".ask-for-consult");
+let popUpPrivacy = document.querySelector(".popup__privacy_policy");
+let popUpRegisterForm = document.querySelector(".popup__register_form");
+let popUpContentReg = popUpRegisterForm.querySelector(".popup__content");
+let blurPopUpReg = popUpRegisterForm.querySelector(".close__popup");
+let popUpContentPriv = popUpPrivacy.querySelector(".popup__content");
+let closePopUpPriv = popUpPrivacy.querySelector(".close__button");
+let blurPopUpPriv = popUpPrivacy.querySelector(".close__popup");
+
 
 policyLink.addEventListener("click", function(e){
-	popUp.classList.remove("hidden");
+	popUpPrivacy.classList.remove("hidden");
 	setTimeout(function(){
-		popUpContent.style.transition = "0.5s";
-		popUpContent.style.transform = "translate(0%,0%)";
+		popUpContentPriv.style.transition = "0.5s";
+		popUpContentPriv.style.transform = "translate(0%,0%)";
 	}, 100)
 	e.preventDefault();
 });
 
-closePopUp.addEventListener("click", function(){
-	popUpContent.style.transition = "0.5s";
-	popUpContent.style.transform = "translate(0%,-150%)";
+closePopUpPriv.addEventListener("click", function(){
+	popUpContentPriv.style.transition = "0.5s";
+	popUpContentPriv.style.transform = "translate(0%,-150%)";
 	setTimeout(function(){
-		popUp.classList.add("hidden");
+		popUpPrivacy.classList.add("hidden");
 	},500)
 });
 
-blurPopUp.addEventListener("click", function(e){
-	popUpContent.style.transition = "0.5s";
-	popUpContent.style.transform = "translate(0%,-150%)";
+blurPopUpPriv.addEventListener("click", function(e){
+	popUpContentPriv.style.transition = "0.5s";
+	popUpContentPriv.style.transform = "translate(0%,-150%)";
 	setTimeout(function(){
-		popUp.classList.add("hidden");
+		popUpPrivacy.classList.add("hidden");
+	},500)
+	e.preventDefault();
+});
+
+
+buttonRegistration.addEventListener("click", function(e){
+	popUpRegisterForm.classList.remove("hidden");
+	setTimeout(function(){
+		popUpContentReg.style.transition = "0.5s";
+		popUpContentReg.style.transform = "translate(0%,0%)";
+	}, 100)
+	e.preventDefault();
+});
+
+blurPopUpReg.addEventListener("click", function(e){
+	popUpContentReg.style.transition = "0.5s";
+	popUpContentReg.style.transform = "translate(0%,-150%)";
+	setTimeout(function(){
+		popUpRegisterForm.classList.add("hidden");
 	},500)
 	e.preventDefault();
 });
