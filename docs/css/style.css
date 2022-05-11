@@ -134,11 +134,18 @@ nav{
 }
 
 .ask-for-consult{
+	cursor: pointer;
 	background: white;
 	border: none;
 	padding: 10px 15px;
 	font-family: "Roboto Flex", sans-serif;
 	font-size: 1em;
+	transition: 0.3s;
+}
+
+.ask-for-consult:hover{
+	color: white;
+	background-color: #00868A;
 }
 
 .header-slider{
@@ -272,6 +279,7 @@ nav{
 }
 
 .austeticks{
+	position: relative;
 	width: 51%;
 	padding: 40px 0;
 }
@@ -317,8 +325,8 @@ nav{
 
 .achive-img{
 	position: absolute;
-	top: 860px;
-	right: 20px;
+	top: 100px;
+	right: -20px;
 	z-index: -3;
 }
 
